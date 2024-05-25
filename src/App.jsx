@@ -37,6 +37,21 @@ function App() {
   }
 
 
+    const genresCall = async () => {
+      let promises = []
+      let endPoint = ["tv", 'movie']
+      let allGenres = {}
+
+      endPoints.forEach((url) => {
+        promises.push(fetchDataFromApi(`/genre/${url}/list`))
+      })
+      const data = await Promise.all(promises)
+      data.map(({genres}) => {
+        return
+      })
+    }
+
+      
 
   return (
     <BrowserRouter>
