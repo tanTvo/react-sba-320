@@ -26,6 +26,7 @@ const HeroBanner = () => {
         }
     };
 
+
     return (
         <div className="heroBanner">
             {!loading && (
