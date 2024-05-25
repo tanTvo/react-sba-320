@@ -6,6 +6,7 @@ import ContentWrapper from "../../../components/contentWrapper/ContentWrapper";
 import "./style.scss"
 import useFetch from "../../../hooks/UseFetch";
 
+
 const HeroBanner = () => {
     const [background, setBackground] = useState("");
     const [query, setQuery] = useState("");
@@ -25,7 +26,6 @@ const HeroBanner = () => {
             navigate(`/search/${query}`);
         }
     };
-
 
     return (
         <div className="heroBanner">
@@ -58,4 +58,4 @@ const HeroBanner = () => {
     );
 };
 
-export default HeroBanner
+export default HeroBanner;
