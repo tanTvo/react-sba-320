@@ -5,7 +5,7 @@ import {
 } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
-//import dayjs from "dayjs";
+import dayjs from "dayjs";
 
 import ContentWrapper from "../contentWrapper/ContentWrapper";
 import Img from "../lazyLoadImage/Img";
@@ -51,6 +51,11 @@ const Carousel = ({data, loading}) => {
                                     <div className="textBlock">
                                         <span className="title">
                                             {item.title} || {item.name}
+                                        </span>
+                                        <span className="date">
+                                            {dayjs(item.release_Date).format(
+                                                "MMM D, YYYY"
+                                            )}
                                         </span>
                                     </div>
                             </div>
