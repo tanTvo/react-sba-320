@@ -1,8 +1,8 @@
 import React from "react";
 
-const SwitchTabs = () =>{
+const SwitchTabs = ({data, onTabChange}) =>{
     return (
-        <div>SwitchTabs</div>
+        <div className="switchingTabs">SwitchTabs</div>
     )
 }
 
