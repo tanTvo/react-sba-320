@@ -48,7 +48,6 @@ const SearchResult = () => {
         fetchInitialData();
     }, [query]);
 
-
     return (
         <div className="searchResultsPage">
             {loading && <Spinner initial={true} />}
