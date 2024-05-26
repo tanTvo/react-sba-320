@@ -20,6 +20,4 @@ Ensured components are modular and maintainable.
 Styling:
 
 Used SCSS for styling to leverage variables, mixins, and nesting for a scalable CSS architecture.
-Deployment:
-
-Deployed the application to Heroku/Netlify for hosting and made it publicly accessible.
+Deployment: https://movodyssey.netlify.app/
